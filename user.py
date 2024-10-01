@@ -2,7 +2,8 @@ from flask import Flask, request, redirect, render_template, url_for
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Set a secret key for session handling
+# Set a secret key for session handling
+app.secret_key = 'your_secret_key'
 
 login_manager = LoginManager()
 login_manager.init_app(app)
